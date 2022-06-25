@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  overflow-x: hidden;
+}
+.card-container{
+  margin: 2vh 5vw ;
+}
+.card{
+  width: fit-content;
+  max-width: 540px;
+  box-shadow: 2px #000000;
+}
+.card img {
+  width: fit-content;
+  max-width: 100%;
+  height: 300px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-title, .nav-link{
+  color: #ffbb00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+small{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+small p{
+  color: #ffbb00;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link{
+  text-decoration: none;
+  background: none;
+  transition: 0.2s all ease-in-out;
+  border: none;
+}
+.nav-link:hover{
+  border-bottom: 2px solid #ffbb00;
+  color: #ffbb00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
